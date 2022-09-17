@@ -1,6 +1,9 @@
-﻿  코드를 생성하고 있습니다.
-  3 of 1862 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+﻿  dumper.cpp
+E:\test\Shh0yaUEDumper\Shh0yaSdkGenerator\dumper.cpp(231,20): warning C4018: '<': signed/unsigned mismatch
+E:\test\Shh0yaUEDumper\Shh0yaSdkGenerator\dumper.cpp(254,20): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  3 of 1924 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  코드를 생성했습니다.
-  Shh0yaSdkGenerator.vcxproj -> C:\Users\hunho\source\repos\Shh0yaSdkGenerator\binary\Shh0yaSdkGenerator.exe
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  Shh0yaSdkGenerator.vcxproj -> E:\test\Shh0yaUEDumper\binary\Shh0yaSdkGenerator.exe

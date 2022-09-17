@@ -63,7 +63,7 @@ enum class UE_VERSION {
 	UnrealEngine4_23_1 = 0x571,
 	UnrealEngine4_24_3 = 0x583,
 	UnrealEngine4_25_4 = 0x594,
-	UnrealEngine4_26_1 = 0x5A1,
+	UnrealEngine4_26_2 = 0x5A2,
 };
 
 typedef struct _DUMPER_CONFIG {

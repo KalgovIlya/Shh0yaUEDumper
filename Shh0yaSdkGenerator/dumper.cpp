@@ -40,7 +40,7 @@ BOOLEAN Dumper::GetDumpConfig()
 	DumperData.Config.Minor = atoi(szMinor);
 	DumperData.Config.Patch = atoi(szPatch);
 	DumperData.Config.Version = (DumperData.Config.Major << 8) + (DumperData.Config.Minor << 4) + DumperData.Config.Patch;
-
+	
 	return TRUE;
 }
 
@@ -209,9 +209,9 @@ DUMP_STATUS Dumper::Dump()
 		if (!SdkGenerator()) { return DUMP_STATUS::DUMPER_FAIELD_SDK_GEN; }
 		break;
 	}
-	case UE_VERSION::UnrealEngine4_26_1:
+	case UE_VERSION::UnrealEngine4_26_2:
 	{
-		ENGINE_OFFSET::UE4261 OffsetInfo = { 0, };
+		ENGINE_OFFSET::UE4262 OffsetInfo = { 0, };
 		if (!GetPtrByPattern(&OffsetInfo)) { return DUMP_STATUS::DUMPER_FAILED_OBJECT_INIT; }
 		if (!NameDump() || !ObjectDump()) { return DUMP_STATUS::DUMPER_FAILED_DUMP; }
 		if (!SdkGenerator()) { return DUMP_STATUS::DUMPER_FAIELD_SDK_GEN; }

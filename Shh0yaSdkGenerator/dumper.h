@@ -66,14 +66,14 @@ typedef struct _ENGINE_OFFSET
 		}Common;
 	};
 
-	struct UE4261
+	struct UE4262
 	{
 		USHORT Stride = 2;
 		struct {
-			char* NamePattern = const_cast <char*>("\x4C\x8D\x05\x00\x00\x00\x00\xEB\x1D");
-			char* ObjectPattern = const_cast <char*>("\x48\x8D\x0D\x00\x00\x00\x00\x44\x8B\x84\x24");
-			char* NameMask = const_cast <char*>("xxx????xx");
-			char* ObjectMask = const_cast <char*>("xxx????xxxx");
+			char* NamePattern = const_cast <char*>("\x48\x8D\x0D\x00\x00\x00\x00\xE8\x00\x00\x00\x00\xC6\x05\x00\x00\x00\x00\x01\x0F\x10");
+			char* ObjectPattern = const_cast <char*>("\x48\x8D\x0D\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x48\x8D\x8D\x00\x00\x00\x00\xE8\x00\x00\x00\x00\x48\x8D\x8D");
+			char* NameMask = const_cast <char*>("xxx????x????xx????xxx");
+			char* ObjectMask = const_cast <char*>("xxx????x????xxx????x????xxx");
 			DWORD NameInstruction = 3;
 			DWORD NameInstCount = 7;
 			DWORD ObjectInstruction = 3;
